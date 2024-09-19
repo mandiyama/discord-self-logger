@@ -23,33 +23,11 @@ client.on('messageCreate', message => {
   const userTag = message.author.tag;
   const userId = message.author.id;
 
-  const logMessage = {
-    timestamp,
-    server: {
-      name: serverName,
-      id: serverId
-    },
-    channel: {
-      name: channelName,
-      id: channelId
-    },
-    user: {
-      tag: userTag,
-      id: userId
-    },
-    content: message.content
-  };
-  
-  let data = [];
-  if (fs.existsSync('messages.json')) {
-    data = JSON.parse(fs.readFileSync('messages.json'));
-  }
-  
-  data.push(logMessage);
+  const logMessage = `[${timestamp}] [${serverName} (${serverId})] [#${channelName} (${channelId})] [${userTag} (${userId})]: ${message.content}\n`;
 
-  fs.writeFile('messages.json', JSON.stringify(data, null, 2), (err) => {
+  fs.appendFile('messages.txt', logMessage, (err) => {
     if (err) throw err;
-    console.log('Message saved to messages.json');
+    console.log('Message saved to messages.txt');
     console.log(`[${timestamp}] [${serverName} (${serverId})] [#${channelName} (${channelId})] [${userTag} (${userId})]: ${message.content}`);
   });
 });
