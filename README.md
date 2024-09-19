@@ -6,6 +6,7 @@
 * Node 18+ (LTS)
 
 ## Run
+* ``` npm i ```
 * Enter your token account in ` index.js `
 * ``` npm run start ``` Or ``` node index.js ```
 * Done!
