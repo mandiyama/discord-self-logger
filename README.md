@@ -2,7 +2,7 @@
 ### Discord.js SelfBot Logger message in the format `json`
 
 ## Requirements
-* [discord.js-selfbot-v13](https://github.com/aiko-chan-ai/discord.js-selfbot-v13)
+* [discord.js-selfbot-v13](https://github.com/aiko-chan-ai/discord.js-selfbot-v13) (necessarily)
 * Node 18+ (LTS)
 
 ## Run
