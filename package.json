@@ -1,0 +1,23 @@
+{
+  "name": "discord-self-logger",
+  "version": "1.0.0",
+  "description": "selfhost",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "author": "mei",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js-selfbot-v13": "^3.4.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mandiyama/discord-self-logger.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mandiyama/discord-self-logger/issues"
+  },
+  "homepage": "https://github.com/mandiyama/discord-self-logger#readme"
+}
