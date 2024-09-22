@@ -1,5 +1,5 @@
 # discord-self-logger
-### Discord.js SelfBot Logger message in the format `json`
+### Discord.js SelfBot Logger message in the format `txt`
 
 ## Requirements
 * [discord.js-selfbot-v13](https://github.com/aiko-chan-ai/discord.js-selfbot-v13) (necessarily)
